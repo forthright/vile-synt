@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+require("shelljs/global")
+
+rm("-r", "coverage")
+rm("-r", ".nyc_output")
+
+mkdir("coverage")
+
+exec(
+  "npm run -s test-cov",
+  function(code) {
+    if (code !== 0) exit(code)
+    exec(
+      "npm run -s lint-cov",
+      function(code) {
+        if (code !== 0) exit(code)
+      })
+  })

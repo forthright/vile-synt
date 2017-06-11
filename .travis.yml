@@ -1,0 +1,41 @@
+dist: trusty
+
+os:
+  - osx
+  - linux
+
+language: node_js
+
+node_js:
+  - "4"
+  - "6"
+  - "8"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - uname -a
+  - nvm --version
+  - node --version
+  - npm --version
+
+git:
+  depth: 10
+
+branches:
+  only:
+    - master
+
+install:
+  - npm i
+
+before_script:
+  - echo "no-op"
+
+script:
+  - npm run -s compile
+  - npm run -s test

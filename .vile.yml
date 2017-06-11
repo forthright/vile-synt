@@ -1,0 +1,41 @@
+vile:
+  ignore:
+    - appveyor.yml
+    - coverage
+    - coffeelint.json
+    - .travis.yml
+    - node_modules
+    - lib
+    - tags
+    - .git
+    - .nyc_output
+    - circle.yml
+    - package-lock.json
+    - .editorconfig
+    - .gitignore
+    - tags
+    - tsconfig.json
+    - test/fixtures/*
+    - tslint.json
+    - README.md
+    - .vile.yml
+
+retire:
+  config:
+    node: true
+    package: true
+    js: false
+    ignore:
+      - .docs
+depcheck:
+  config:
+    ignore_dev_deps: true
+    ignore_dirs:
+      - src
+      - node_modules
+      - coverage
+      - "vile-**"
+
+coverage:
+  config:
+    path: coverage/lcov.info

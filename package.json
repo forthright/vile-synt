@@ -1,0 +1,82 @@
+{
+  "name": "vile-synt",
+  "version": "0.1.0",
+  "description": "A vile plugin for synt",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src/@types",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "Brent Lintner <brent.lintner@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/forthright/vile-synt/issues"
+  },
+  "homepage": "https://github.com/forthright/vile-synt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forthright/vile-synt.git"
+  },
+  "scripts": {
+    "coffee": "coffee",
+    "compile": "tsc",
+    "compile-dev": "tsc -w",
+    "dev": "sh bin/dev",
+    "istanbul": "istanbul",
+    "ncu": "ncu -a",
+    "lint-cov": "node bin/lint-cov",
+    "test": "globstar -- _mocha \"test/spec/**/*.coffee\"",
+    "test-cov": "nyc -r json -r lcov -r text -x test -x **/node_modules/** npm run -s test",
+    "test-ci-build": "node bin/test-ci-build",
+    "tsc": "tsc",
+    "vile": "vile p -u -x src.ts:lib.js -n",
+    "release-it": "release-it"
+  },
+  "keywords": [
+    "vile",
+    "synt",
+    "duplicate",
+    "similar",
+    "code"
+  ],
+  "dependencies": {
+    "@types/lodash": "^4.14.66",
+    "lodash": "^4.17.4",
+    "synt": "^0.4.6",
+    "unixify": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vile": ">=0.16.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-as-promised": "^7.0.0",
+    "coffee-script": "^1.12.6",
+    "globstar": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "mimus": "^0.2.5",
+    "mocha": "^3.4.2",
+    "npm-check-updates": "^2.11.3",
+    "nyc": "^11.0.2",
+    "release-it": "^2.7.3",
+    "shelljs": "^0.7.8",
+    "sinon": "^2.3.4",
+    "sinon-chai": "^2.11.0",
+    "typescript": "^2.3.4",
+    "vile": "^0.16.3",
+    "vile-coffeelint": "^0.1.16",
+    "vile-comment": "^0.1.19",
+    "vile-coverage": "^0.2.15",
+    "vile-depcheck": "^0.1.13",
+    "vile-eclint": "^0.1.14",
+    "vile-escomplex": "^0.1.5",
+    "vile-git": "^0.5.3",
+    "vile-language": "^0.1.13",
+    "vile-ncu": "^0.2.4",
+    "vile-nsp": "^0.2.14",
+    "vile-stat": "^0.0.15",
+    "vile-tslint": "^0.3.3"
+  }
+}
