@@ -92,9 +92,7 @@ const issue = (
     duplicate: duplicate_info(match),
     path: filepath(match),
     signature: signature(match, sim),
-    type: vile.DUPE,
-    where: synt_line_to_vile_line(
-      _.get(_.first(match), "pos"))
+    type: vile.DUPE
   })
 
 const compare = (

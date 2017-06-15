@@ -33,15 +33,5 @@ module.exports = [
     "path": "src/sub/baz.js"
     "signature": "synt::86:src/sub/baz.js:1:0:8:1:src/sub/baz.js:10:0:17:1"
     "type": "duplicate"
-    "where": {
-      "end": {
-        "character": 1
-        "line": 8
-      }
-      "start": {
-        "character": 0
-        "line": 1
-      }
-    }
   }
 ]
