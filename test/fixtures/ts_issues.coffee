@@ -27,25 +27,12 @@ module.exports = [
     "path": "src/foo.ts"
     "signature": "synt::85:src/foo.ts:12:1:src/foo.ts:12:10"
     "type": "duplicate"
-    "where": [
-      {
-        "where": {
-          "end": {}
-          "start": {
-            "character": 12
-            "line": 1
-          }
-        }
+    "where": {
+      "end": {}
+      "start": {
+        "character": 12
+        "line": 1
       }
-      {
-        "where": {
-          "end": {}
-          "start": {
-            "character": 12
-            "line": 10
-          }
-        }
-      }
-    ]
+    }
   }
 ]

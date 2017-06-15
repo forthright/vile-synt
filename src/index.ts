@@ -66,15 +66,6 @@ const duplicate_info = (
   return { locations }
 }
 
-const line_info = (
-  match : synt.ParseResult[]
-) : vile.IssueLocation =>
-  _.map(match, (result : synt.ParseResult) => {
-    return {
-      where: synt_line_to_vile_line(result.pos)
-    }
-  })
-
 // synt::sim::f1:l||0:c||0:l2||0:c2||0::f2...
 const signature = (
   match : synt.ParseResult[],
@@ -102,7 +93,8 @@ const issue = (
     path: filepath(match),
     signature: signature(match, sim),
     type: vile.DUPE,
-    where: line_info(match)
+    where: synt_line_to_vile_line(
+      _.get(_.first(match), "pos"))
   })
 
 const compare = (
