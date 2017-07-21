@@ -1,11 +1,11 @@
 # vile-synt [![CircleCI](https://circleci.com/gh/forthright/vile-synt.svg?style=shield)](https://circleci.com/gh/forthright/vile-synt) [![Build status](https://ci.appveyor.com/api/projects/status/34p27h7gqyld3rre/branch/master?svg=true)](https://ci.appveyor.com/project/brentlintner/vile-synt/branch/master) [![Build Status](https://travis-ci.org/forthright/vile-synt.svg?branch=master)](https://travis-ci.org/forthright/vile-synt) [![score-badge](https://vile.io/api/v0/projects/vile-synt/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-synt) [![security-badge](https://vile.io/api/v0/projects/vile-synt/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-synt) [![coverage-badge](https://vile.io/api/v0/projects/vile-synt/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-synt) [![dependency-badge](https://vile.io/api/v0/projects/vile-synt/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-synt)
 
-A [vile](https://vile.io) plugin for finding similar functions and
+A [Vile](https://vile.io) plugin for finding similar functions and
 classes in your TypeScript/JavaScript code (via [synt](https://github.com/brentlintner/synt)).
 
 ## Requirements
 
-- [NodeJS](http://nodejs.org)
+- [Node.js](http://nodejs.org)
 
 ## Installation
 
@@ -46,7 +46,7 @@ synt:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -72,8 +72,6 @@ Current issue tracker is on [GitHub](https://github.com/forthright/vile-synt/iss
 Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
-
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
 
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 

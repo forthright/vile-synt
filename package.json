@@ -1,7 +1,7 @@
 {
   "name": "vile-synt",
   "version": "0.1.2",
-  "description": "A vile plugin for synt",
+  "description": "Find similar functions and classes in your TypeScript/JavaScript code.",
   "main": "lib/index.js",
   "files": [
     "lib",
