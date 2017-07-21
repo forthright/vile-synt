@@ -1,6 +1,6 @@
 {
   "name": "vile-synt",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Find similar functions and classes in your TypeScript/JavaScript code.",
   "main": "lib/index.js",
   "files": [
