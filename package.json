@@ -58,7 +58,6 @@
     "istanbul": "^0.4.5",
     "mimus": "^0.2.6",
     "mocha": "^3.4.2",
-    "npm-check-updates": "^2.12.0",
     "nyc": "^11.0.2",
     "release-it": "^2.8.0",
     "shelljs": "^0.7.8",
@@ -73,7 +72,7 @@
     "vile-eclint": "^0.1.14",
     "vile-escomplex": "^0.1.5",
     "vile-git": "^0.5.3",
-    "vile-ncu": "^0.2.4",
+    "vile-ncu": "^0.3.0",
     "vile-nsp": "^0.2.14",
     "vile-stat": "^0.1.0",
     "vile-tslint": "^0.3.3"
