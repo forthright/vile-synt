@@ -34,7 +34,3 @@ depcheck:
       - node_modules
       - coverage
       - "vile-**"
-
-coverage:
-  config:
-    path: coverage/lcov.info
